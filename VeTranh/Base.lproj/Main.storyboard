@@ -25,21 +25,22 @@
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="hJ8-B9-PM3">
                                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="49" id="Ubg-Ww-aH4"/>
-                                            <constraint firstAttribute="width" constant="207" id="hCc-fT-FZN"/>
+                                            <constraint firstAttribute="height" constant="49" id="7TF-XK-2x9"/>
+                                            <constraint firstAttribute="width" constant="207" id="o9h-5o-GLX"/>
                                         </constraints>
-                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PgY-gd-0EX">
-                                            <size key="itemSize" width="50" height="50"/>
+                                        <inset key="scrollIndicatorInsets" minX="1" minY="1" maxX="1" maxY="1"/>
+                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="5" minimumInteritemSpacing="5" id="PgY-gd-0EX">
+                                            <size key="itemSize" width="40" height="40"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
                                             <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="17s-0w-HEN" customClass="CellCustomize" customModule="VeTranh" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="-1" width="50" height="50"/>
+                                                <rect key="frame" x="0.0" y="5" width="40" height="40"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                 </view>
                                             </collectionViewCell>
@@ -84,7 +85,7 @@
                                             <constraint firstAttribute="width" constant="27" id="Ihn-Ik-gQr"/>
                                             <constraint firstAttribute="height" constant="69" id="v3I-9p-50Y"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="pen1.png"/>
+                                        <state key="normal" title="Button" image="pen_1.png"/>
                                         <connections>
                                             <action selector="draw_round:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UHd-eA-VRq"/>
                                         </connections>
@@ -94,7 +95,7 @@
                                             <constraint firstAttribute="height" constant="69" id="Drq-u5-ns8"/>
                                             <constraint firstAttribute="width" constant="27" id="eI2-KE-B92"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="pen2.png"/>
+                                        <state key="normal" title="Button" image="pen_4.png"/>
                                         <connections>
                                             <action selector="draw_butt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2hb-CD-AEQ"/>
                                         </connections>
@@ -104,7 +105,7 @@
                                             <constraint firstAttribute="width" constant="27" id="Pe9-gq-wj6"/>
                                             <constraint firstAttribute="height" constant="69" id="gsv-GK-5Nr"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="pen3.png"/>
+                                        <state key="normal" title="Button" image="pen_3.png"/>
                                         <connections>
                                             <action selector="draw_small:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LDc-P1-sAe"/>
                                         </connections>
@@ -114,7 +115,7 @@
                                             <constraint firstAttribute="height" constant="69" id="bR2-Sx-3fy"/>
                                             <constraint firstAttribute="width" constant="27" id="oaz-TU-BQY"/>
                                         </constraints>
-                                        <state key="normal" title="Button" image="pen4.png"/>
+                                        <state key="normal" image="pen_square.png"/>
                                         <connections>
                                             <action selector="draw_square:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eyu-Hg-3ZC"/>
                                         </connections>
@@ -130,28 +131,28 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="OU6-So-8js" firstAttribute="leading" secondItem="LuY-dC-db4" secondAttribute="leading" constant="9" id="2hn-bg-ceO"/>
                                     <constraint firstItem="MLs-pU-uQf" firstAttribute="leading" secondItem="7Ib-sj-WzH" secondAttribute="trailing" constant="4" id="49l-1a-FQj"/>
-                                    <constraint firstItem="hJ8-B9-PM3" firstAttribute="leading" secondItem="nq8-0N-Dsc" secondAttribute="trailing" constant="8" id="6SU-19-nbx"/>
                                     <constraint firstItem="7Ib-sj-WzH" firstAttribute="leading" secondItem="fNz-yd-5KI" secondAttribute="trailing" constant="2" id="B23-c4-5kX"/>
                                     <constraint firstItem="ryt-ad-Daf" firstAttribute="top" secondItem="LuY-dC-db4" secondAttribute="top" constant="7" id="D4V-cz-1qb"/>
-                                    <constraint firstAttribute="trailing" secondItem="hJ8-B9-PM3" secondAttribute="trailing" id="GWq-yh-lu8"/>
                                     <constraint firstItem="MLs-pU-uQf" firstAttribute="leading" secondItem="7Ib-sj-WzH" secondAttribute="trailing" constant="4" id="GXO-p0-vAL"/>
-                                    <constraint firstAttribute="bottom" secondItem="hJ8-B9-PM3" secondAttribute="bottom" id="HWt-Xj-RRZ"/>
                                     <constraint firstItem="hV9-9M-iAC" firstAttribute="top" secondItem="LuY-dC-db4" secondAttribute="top" constant="6" id="Iki-wx-SOx"/>
                                     <constraint firstItem="ryt-ad-Daf" firstAttribute="leading" secondItem="NFx-4S-UFq" secondAttribute="trailing" constant="8" id="KpM-7Y-xzX"/>
                                     <constraint firstItem="NFx-4S-UFq" firstAttribute="top" secondItem="LuY-dC-db4" secondAttribute="top" constant="9" id="QN6-KG-xm9"/>
                                     <constraint firstAttribute="trailing" secondItem="hV9-9M-iAC" secondAttribute="trailing" constant="12" id="QbE-rR-5Jy"/>
                                     <constraint firstItem="nq8-0N-Dsc" firstAttribute="leading" secondItem="MLs-pU-uQf" secondAttribute="trailing" constant="8" id="YCR-uN-6DI"/>
+                                    <constraint firstItem="hJ8-B9-PM3" firstAttribute="top" secondItem="hV9-9M-iAC" secondAttribute="bottom" constant="9" id="YgK-7p-uTJ"/>
                                     <constraint firstItem="nq8-0N-Dsc" firstAttribute="leading" secondItem="MLs-pU-uQf" secondAttribute="trailing" constant="8" id="aoq-jN-UM3"/>
                                     <constraint firstItem="fNz-yd-5KI" firstAttribute="leading" secondItem="OU6-So-8js" secondAttribute="trailing" constant="2" id="ftR-9N-voA"/>
                                     <constraint firstItem="fNz-yd-5KI" firstAttribute="leading" secondItem="OU6-So-8js" secondAttribute="trailing" constant="2" id="h7z-XU-RDu"/>
                                     <constraint firstItem="hV9-9M-iAC" firstAttribute="leading" secondItem="ryt-ad-Daf" secondAttribute="trailing" constant="8" id="p9Y-WO-1Q4"/>
                                     <constraint firstItem="7Ib-sj-WzH" firstAttribute="leading" secondItem="fNz-yd-5KI" secondAttribute="trailing" constant="2" id="sgf-fQ-Wav"/>
                                     <constraint firstAttribute="height" constant="100" id="sti-E3-lwF"/>
-                                    <constraint firstItem="hJ8-B9-PM3" firstAttribute="leading" secondItem="nq8-0N-Dsc" secondAttribute="trailing" constant="8" id="syV-Ak-XSZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="hJ8-B9-PM3" secondAttribute="trailing" id="t8A-E7-nCx"/>
+                                    <constraint firstItem="hJ8-B9-PM3" firstAttribute="bottom" secondItem="nq8-0N-Dsc" secondAttribute="bottom" id="vWs-1o-IyP"/>
+                                    <constraint firstItem="hJ8-B9-PM3" firstAttribute="leading" secondItem="nq8-0N-Dsc" secondAttribute="trailing" constant="8" symbolic="YES" id="xbJ-6r-Lf4"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -221,10 +222,10 @@
         <image name="10px" width="411" height="411"/>
         <image name="30px" width="412" height="411"/>
         <image name="5px" width="411" height="411"/>
-        <image name="pen1.png" width="74" height="191"/>
-        <image name="pen2.png" width="76" height="126"/>
-        <image name="pen3.png" width="60" height="124"/>
-        <image name="pen4.png" width="112" height="125"/>
         <image name="pen5.png" width="60" height="125"/>
+        <image name="pen_1.png" width="76" height="142"/>
+        <image name="pen_3.png" width="64" height="176"/>
+        <image name="pen_4.png" width="97" height="140"/>
+        <image name="pen_square.png" width="19" height="79"/>
     </resources>
 </document>

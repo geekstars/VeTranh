@@ -10,7 +10,7 @@ import UIKit
 
 class CellCustomize: UICollectionViewCell {
     
-    let kCellWidth:CGFloat = 44
+    let kCellWidth:CGFloat = 38
     var filteredImageView: UIImageView!
     override init(frame: CGRect) {
         super.init(frame: frame)

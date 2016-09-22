@@ -163,7 +163,6 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! CellCustomize
         
-        //cell.filteredImageView.image = UIImage(named: imgColors[indexPath.item])!
         cell.filteredImageView.image = UIImage(named: imgColors[(indexPath as NSIndexPath).item])
         
         return cell
